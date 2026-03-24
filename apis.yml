@@ -1,0 +1,95 @@
+aid: stackshare
+url: https://raw.githubusercontent.com/api-evangelist/stackshare/refs/heads/main/apis.yml
+apis:
+- aid: stackshare:stackshare-graphql-api
+  name: StackShare GraphQL API
+  tags:
+  - Developer Tools
+  - Tech Stacks
+  - Software Discovery
+  baseURL: https://api.stackshare.io/graphql
+  humanURL: https://docs.stackshare.io/
+  properties:
+  - url: https://docs.stackshare.io/
+    type: Documentation
+  - url: https://docs.stackshare.io/reference/getting-started
+    type: GettingStarted
+  - url: https://docs.stackshare.io/reference/authentication
+    type: Authentication
+  - url: https://docs.stackshare.io/docs/the-graphql-endpoint
+    type: GraphQL
+  - url: https://docs.stackshare.io/docs/enrichment
+    type: Documentation
+  - url: https://docs.stackshare.io/docs/tools
+    type: Documentation
+  description: >-
+    The StackShare GraphQL API provides programmatic access to StackShare's
+    database of developer tools and company tech stacks. It exposes four
+    primary capability areas: Leads (find companies using specific tools),
+    Enrichment (retrieve the full tech stack for a given company), Tools
+    (query metadata about a technology such as description and website URL),
+    and Search (look up companies and retrieve basic company details). The
+    API is accessed via a single GraphQL endpoint at
+    https://api.stackshare.io/graphql using an API key passed in the
+    x-api-key request header. Responses are paginated with a maximum of 25
+    results per query.
+name: StackShare
+tags:
+- Developer Tools
+- Tech Stacks
+- Software Discovery
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+common:
+- url: https://stackshare.io/
+  name: StackShare Website
+  type: Website
+- url: https://docs.stackshare.io/
+  name: API Documentation
+  type: Documentation
+- url: https://docs.stackshare.io/reference/getting-started
+  name: Getting Started
+  type: GettingStarted
+- url: https://stackshare.io/api
+  name: Sign Up for API Access
+  type: SignUp
+- url: https://stackshare.io/pricing
+  name: Pricing
+  type: Pricing
+- url: https://stackshare.io/enterprise
+  name: Enterprise
+  type: Pricing
+- url: https://docs.stackshare.io/reference/authentication
+  name: Authentication
+  type: Authentication
+- url: https://docs.stackshare.io/docs/the-graphql-endpoint
+  name: GraphQL Endpoint
+  type: GraphQL
+- url: https://docs.stackshare.io/docs/enrichment
+  name: Enrichment API
+  type: Documentation
+- url: https://docs.stackshare.io/docs/tools
+  name: Tools API
+  type: Documentation
+- url: https://stackshare.io/terms
+  name: Terms of Service
+  type: TermsOfService
+- url: https://stackshare.io/privacy
+  name: Privacy Policy
+  type: PrivacyPolicy
+- url: https://medium.com/@stackshareio
+  name: StackShare Blog
+  type: Blog
+- url: https://twitter.com/stackshare
+  name: StackShare on X (Twitter)
+  type: X
+- url: https://www.linkedin.com/company/stackshare
+  name: StackShare on LinkedIn
+  type: LinkedIn
+- url: https://github.com/stackshare
+  name: StackShare on GitHub
+  type: GitHub
+created: '2026-03-24'
+modified: '2026-03-24'
+specificationVersion: '0.19'

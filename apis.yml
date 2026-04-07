@@ -1,13 +1,12 @@
 aid: stackshare
-url: 
-  https://raw.githubusercontent.com/api-evangelist/stackshare/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/stackshare/refs/heads/main/apis.yml
 apis:
   - aid: stackshare:stackshare-graphql-api
     name: StackShare GraphQL API
     tags:
       - Developer Tools
-      - Tech Stacks
       - Software Discovery
+      - Tech Stacks
     baseURL: https://api.stackshare.io/graphql
     humanURL: https://docs.stackshare.io/
     properties:
@@ -33,8 +32,8 @@ apis:
 name: StackShare
 tags:
   - Developer Tools
-  - Tech Stacks
   - Software Discovery
+  - Tech Stacks
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party

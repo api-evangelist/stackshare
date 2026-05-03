@@ -1,14 +1,40 @@
 aid: stackshare
+name: StackShare
+description: >-
+  StackShare is a platform where developers and companies share information about
+  the technologies and tools they use to build software. The StackShare GraphQL
+  API provides programmatic access to StackShare's database of developer tools
+  and company tech stacks, exposing Leads (find companies using specific tools),
+  Enrichment (retrieve the full tech stack for a domain), Tools (query metadata
+  about technologies), and Search capabilities.
 url: https://raw.githubusercontent.com/api-evangelist/stackshare/refs/heads/main/apis.yml
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Developer Tools
+  - Software Discovery
+  - Tech Stacks
+type: Index
+access: 3rd-Party
+created: '2026-03-24'
+modified: '2026-05-02'
+specificationVersion: '0.19'
 apis:
   - aid: stackshare:stackshare-graphql-api
     name: StackShare GraphQL API
+    description: >-
+      The StackShare GraphQL API provides programmatic access to StackShare's
+      database of developer tools and company tech stacks. It exposes four
+      primary capability areas: Leads (find companies using specific tools),
+      Enrichment (retrieve the full tech stack for a given company), Tools
+      (query metadata about a technology such as description and website URL),
+      and Search (look up companies and retrieve basic company details).
+      Authentication uses an API token passed as a query parameter.
+    humanURL: https://docs.stackshare.io/
+    baseURL: https://api.stackshare.io/graphql
     tags:
       - Developer Tools
       - Software Discovery
       - Tech Stacks
-    baseURL: https://api.stackshare.io/graphql
-    humanURL: https://docs.stackshare.io/
     properties:
       - url: https://docs.stackshare.io/
         type: Documentation
@@ -22,21 +48,8 @@ apis:
         type: Documentation
       - url: https://docs.stackshare.io/docs/tools
         type: Documentation
-    description: >-
-      The StackShare GraphQL API provides programmatic access to StackShare's database
-      of developer tools and company tech stacks. It exposes four primary capability
-      areas: Leads (find companies using specific tools), Enrichment (retrieve the
-      full tech stack for a given company), Tools (query metadata about a technology
-      such as description and website URL), and Search (look up companies and retrieve
-      basic company details).
-name: StackShare
-tags:
-  - Developer Tools
-  - Software Discovery
-  - Tech Stacks
-type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-access: 3rd-Party
+      - url: https://docs.stackshare.io/docs/leads
+        type: Documentation
 common:
   - url: https://stackshare.io/
     name: StackShare Website
@@ -59,15 +72,6 @@ common:
   - url: https://docs.stackshare.io/reference/authentication
     name: Authentication
     type: Authentication
-  - url: https://docs.stackshare.io/docs/the-graphql-endpoint
-    name: GraphQL Endpoint
-    type: GraphQL
-  - url: https://docs.stackshare.io/docs/enrichment
-    name: Enrichment API
-    type: Documentation
-  - url: https://docs.stackshare.io/docs/tools
-    name: Tools API
-    type: Documentation
   - url: https://stackshare.io/terms
     name: Terms of Service
     type: TermsOfService
@@ -78,17 +82,11 @@ common:
     name: StackShare Blog
     type: Blog
   - url: https://twitter.com/stackshare
-    name: StackShare on X (Twitter)
+    name: StackShare on X
     type: X
-  - url: https://www.linkedin.com/company/stackshare
-    name: StackShare on LinkedIn
-    type: LinkedIn
   - url: https://github.com/stackshare
     name: StackShare on GitHub
     type: GitHub
-created: '2026-03-24'
-modified: '2026-03-24'
-specificationVersion: '0.19'
-description: >-
-  StackShare is a platform where developers and companies share information about
-  the technologies and tools they use to build software.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

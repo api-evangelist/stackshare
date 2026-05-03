@@ -1,35 +1,59 @@
 # StackShare
 
-StackShare (https://stackshare.io/) is a platform for discovering and comparing developer tools and tech stacks. It aggregates data on the technologies used by over 1.5 million companies, allowing developers and engineering teams to explore what tools others are using, compare alternatives, and make informed decisions about their own stack. StackShare is operated by FOSSA, Inc.
+StackShare is a platform where developers and companies share information about the technologies and tools they use to build software. It aggregates tech stack data from over 1.5 million companies and provides a GraphQL API for programmatic access to tool and company stack data.
 
-## StackShare GraphQL API
+**Website:** [https://stackshare.io/](https://stackshare.io/)
+**Documentation:** [https://docs.stackshare.io/](https://docs.stackshare.io/)
+**GitHub:** [https://github.com/stackshare](https://github.com/stackshare)
 
-The StackShare GraphQL API (https://docs.stackshare.io/) provides programmatic access to StackShare's database of developer tools and company technology stacks. All requests are made via a single GraphQL endpoint at `https://api.stackshare.io/graphql` using the HTTP POST method. Authentication is performed by passing an API key in the `x-api-key` request header. Responses are paginated with a maximum of 25 results per query.
+## Tags
 
-The API exposes four primary capability areas:
+- Developer Tools, Software Discovery, Tech Stacks
 
-- **Leads** — find companies that use a specific tool or set of tools
-- **Enrichment** — retrieve the full technology stack for a given company (e.g., all tools used by Instacart)
-- **Tools** — query a technology name and receive metadata such as description and website URL
-- **Search** — search for a company and retrieve basic details such as name, domain, and ID
+## APIs
 
-API access requires a paid plan or free trial available at https://stackshare.io/api. Enterprise access is available at https://stackshare.io/enterprise.
+### StackShare GraphQL API
+Single GraphQL endpoint at `https://api.stackshare.io/graphql`. Authentication via API key query parameter. Exposes Leads, Enrichment, Tools, and Search queries.
 
-### API Resources
+- **Endpoint:** `https://api.stackshare.io/graphql`
+- **Method:** POST
+- **Authentication:** API key via `api_key` query parameter
+- **Docs:** [https://docs.stackshare.io/](https://docs.stackshare.io/)
 
-- **Documentation:** https://docs.stackshare.io/
-- **Getting Started:** https://docs.stackshare.io/reference/getting-started
-- **Authentication:** https://docs.stackshare.io/reference/authentication
-- **GraphQL Endpoint:** https://docs.stackshare.io/docs/the-graphql-endpoint
-- **Enrichment:** https://docs.stackshare.io/docs/enrichment
-- **Tools:** https://docs.stackshare.io/docs/tools
+Note: StackShare exposes only a GraphQL API, not a REST API, so no OpenAPI spec is applicable.
 
-## Links
+## JSON Schema
 
-- **Website:** https://stackshare.io/
-- **Pricing:** https://stackshare.io/pricing
-- **Enterprise:** https://stackshare.io/enterprise
-- **Blog:** https://medium.com/@stackshareio
-- **Terms of Service:** https://stackshare.io/terms
-- **Privacy Policy:** https://stackshare.io/privacy
-- **GitHub:** https://github.com/stackshare
+| Schema | Path |
+|---|---|
+| Tool | [json-schema/stackshare-tool-schema.json](json-schema/stackshare-tool-schema.json) |
+| Company | [json-schema/stackshare-company-schema.json](json-schema/stackshare-company-schema.json) |
+
+## JSON Structure
+
+| Structure | Path |
+|---|---|
+| Tool | [json-structure/stackshare-tool-structure.json](json-structure/stackshare-tool-structure.json) |
+
+## JSON-LD
+
+| Context | Path |
+|---|---|
+| StackShare Context | [json-ld/stackshare-context.jsonld](json-ld/stackshare-context.jsonld) |
+
+## Examples
+
+| Example | Path |
+|---|---|
+| Tech Stack Enrichment | [examples/stackshare-enrichment-example.json](examples/stackshare-enrichment-example.json) |
+
+## Vocabulary
+
+| Vocabulary | Path |
+|---|---|
+| StackShare Vocabulary | [vocabulary/stackshare-vocabulary.yml](vocabulary/stackshare-vocabulary.yml) |
+
+## Timestamps
+
+- **Created:** 2026-03-24
+- **Modified:** 2026-05-02

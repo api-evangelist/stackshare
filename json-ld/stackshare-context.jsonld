@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "stackshare": "https://stackshare.io/schema/",
+    "Tool": {
+      "@id": "schema:SoftwareApplication",
+      "@type": "@id"
+    },
+    "Company": {
+      "@id": "schema:Organization",
+      "@type": "@id"
+    },
+    "techStack": "stackshare:techStack",
+    "companyTools": "stackshare:companyTools",
+    "domain": "schema:url",
+    "slug": "stackshare:slug",
+    "category": "stackshare:category",
+    "followers": "stackshare:followers",
+    "sourcesSummary": "stackshare:sourcesSummary",
+    "name": "schema:name",
+    "description": "schema:description",
+    "websiteUrl": "schema:url",
+    "githubUrl": "schema:codeRepository"
+  }
+}

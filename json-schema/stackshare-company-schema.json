@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.stackshare.io/schemas/company",
+  "title": "StackShare Company",
+  "description": "A company with a tech stack profile on StackShare",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "domain": { "type": "string", "description": "Company domain (e.g., airbnb.com)" },
+    "companyTools": {
+      "type": "object",
+      "description": "Paginated list of tools used by this company",
+      "properties": {
+        "count": { "type": "integer" },
+        "pageInfo": {
+          "type": "object",
+          "properties": {
+            "hasNextPage": { "type": "boolean" },
+            "endCursor": { "type": "string" }
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "node": {
+                "type": "object",
+                "properties": {
+                  "tool": { "$ref": "#/definitions/Tool" },
+                  "sourcesSummary": { "type": "string" },
+                  "sources": { "type": "array", "items": { "type": "string" } }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Tool": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    }
+  }
+}

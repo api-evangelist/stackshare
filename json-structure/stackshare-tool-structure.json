@@ -1,0 +1,15 @@
+{
+  "title": "StackShare Tool",
+  "description": "A developer tool or technology tracked by StackShare",
+  "type": "object",
+  "fields": [
+    { "name": "id", "type": "string", "required": true },
+    { "name": "name", "type": "string", "required": true },
+    { "name": "slug", "type": "string" },
+    { "name": "description", "type": "string" },
+    { "name": "websiteUrl", "type": "string", "format": "uri" },
+    { "name": "githubUrl", "type": "string", "format": "uri" },
+    { "name": "category", "type": "string" },
+    { "name": "followers", "type": "integer" }
+  ]
+}

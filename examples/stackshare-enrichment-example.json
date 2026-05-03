@@ -1,0 +1,55 @@
+{
+  "title": "Tech Stack Enrichment Example",
+  "description": "Retrieve the full tech stack for a company by domain using the StackShare GraphQL API",
+  "request": {
+    "method": "POST",
+    "url": "https://api.stackshare.io/graphql?api_key={{STACKSHARE_API_KEY}}",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "query": "{ enrichment(domain: \"stripe.com\") { domain companyId companyName companyTools { count pageInfo { hasNextPage endCursor } edges { node { tool { id name } sourcesSummary sources } } } } }"
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "data": {
+        "enrichment": {
+          "domain": "stripe.com",
+          "companyId": "stripe",
+          "companyName": "Stripe",
+          "companyTools": {
+            "count": 42,
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "cursor_abc123"
+            },
+            "edges": [
+              {
+                "node": {
+                  "tool": {
+                    "id": "tool_ruby",
+                    "name": "Ruby"
+                  },
+                  "sourcesSummary": "Confirmed from job postings and engineering blog",
+                  "sources": ["job_postings", "engineering_blog"]
+                }
+              },
+              {
+                "node": {
+                  "tool": {
+                    "id": "tool_postgresql",
+                    "name": "PostgreSQL"
+                  },
+                  "sourcesSummary": "Confirmed from engineering blog",
+                  "sources": ["engineering_blog"]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

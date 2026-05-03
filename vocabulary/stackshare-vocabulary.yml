@@ -1,0 +1,70 @@
+vocabulary:
+  name: StackShare
+  description: Domain vocabulary for the StackShare developer tools platform and API
+  terms:
+    - term: Tech Stack
+      definition: >-
+        The collection of technologies, tools, and services that a company uses
+        to build and operate its software products. StackShare aggregates and
+        surfaces this information from public sources and user submissions.
+      aliases:
+        - Technology Stack
+        - Software Stack
+
+    - term: Tool
+      definition: >-
+        A software library, framework, service, platform, or programming language
+        tracked by StackShare. Each tool has a profile page with description,
+        followers, alternatives, and company usage data.
+      aliases:
+        - Technology
+        - Software Tool
+        - Dependency
+
+    - term: Leads
+      definition: >-
+        The StackShare API query that returns companies using a specified set of
+        technologies. Used for sales prospecting and market research.
+      aliases:
+        - Technology Leads
+        - Company Leads
+
+    - term: Enrichment
+      definition: >-
+        The StackShare API query that returns the full tech stack for a company,
+        identified by domain. Returns all tools in use with source attribution.
+      aliases:
+        - Tech Stack Enrichment
+        - Company Enrichment
+
+    - term: Source
+      definition: >-
+        The origin of information about a tool in a company's stack (e.g.,
+        engineering blog, job posting, GitHub analysis, user submission).
+      aliases:
+        - Data Source
+        - Attribution
+
+    - term: StackApp
+      definition: >-
+        A StackShare community profile entry for a company's technology choices.
+        Includes the set of tools, descriptions, and community decision posts.
+      aliases:
+        - Company Profile
+        - Tech Profile
+
+    - term: Decision
+      definition: >-
+        A StackShare "Stack Decision" — a post by a developer or team explaining
+        why they chose a particular tool or technology, including alternatives considered.
+      aliases:
+        - Stack Decision
+        - Technology Choice
+
+    - term: Cursor
+      definition: >-
+        A pagination token used in GraphQL queries with StackShare. Pass the
+        endCursor value from a pageInfo response to fetch the next page of results.
+      aliases:
+        - Pagination Cursor
+        - Page Token

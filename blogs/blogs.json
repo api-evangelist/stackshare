@@ -1,0 +1,13 @@
+{
+  "repo": "stackshare",
+  "feeds": [
+    {
+      "source": "https://medium.com/@stackshareio",
+      "feed_url": "https://medium.com/@stackshareio/feed",
+      "title": "Stories by StackShare on Medium",
+      "saved": 10
+    }
+  ],
+  "fetched": "2026-05-09T20:17:51Z",
+  "post_count": 10
+}

@@ -51,6 +51,8 @@ apis:
       - url: https://docs.stackshare.io/docs/leads
         type: Documentation
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/stackshare
   - url: https://stackshare.io/
     name: StackShare Website
     type: Website

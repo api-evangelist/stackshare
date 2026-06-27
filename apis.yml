@@ -66,7 +66,7 @@ common:
   type: GettingStarted
 - url: https://stackshare.io/api
   name: Sign Up for API Access
-  type: SignUp
+  type: Signup
 - url: https://stackshare.io/pricing
   name: Pricing
   type: Pricing

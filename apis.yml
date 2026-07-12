@@ -53,6 +53,8 @@ apis:
   - url: graphql/stackshare-graphql.md
     type: GraphQL
 common:
+- type: DomainSecurity
+  url: security/stackshare-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/stackshare
 - url: https://stackshare.io/

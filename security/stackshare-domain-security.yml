@@ -1,0 +1,20 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: stackshare.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 12 19:52:50 2026 GMT
+  hsts: null
+- host: docs.stackshare.io
+  https: false
+- host: api.stackshare.io
+  https: false
+domains:
+- domain: stackshare.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

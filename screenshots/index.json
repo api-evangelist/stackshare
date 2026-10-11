@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "stackshare",
+    "captured_at": "2026-10-11T192917",
+    "source_url": "https://stackshare.io/",
+    "source_type": "Website",
+    "file": "stackshare-2026-10-11T192917.png",
+    "bytes": 136508,
+    "capture": "playwright-local"
+  }
+]
